@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login-page" class="login-page">
+            <h2>Login</h2>
+            <form onsubmit="login(event)">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <div id="login-error" class="error-message" style="display: none;">Invalid login credentials.</div>
+        </div>
+        <div id="dashboard-page" class="dashboard-page" style="display: none;">
+            <h2>Dashboard</h2>
+            <p>Welcome, <span id="welcome-username"></span>!</p>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
