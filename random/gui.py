@@ -10,7 +10,7 @@ class ExecutorGUI(tk.Tk):
         self.title("Python Executor GUI")
         self.geometry("600x400")
 
-        # Input text area
+
         self.input_text = st.ScrolledText(self, wrap=tk.WORD, width=60, height=10)
         self.input_text.pack(pady=10)
 
@@ -18,7 +18,7 @@ class ExecutorGUI(tk.Tk):
         self.execute_button = tk.Button(self, text="Execute", command=self.execute_code)
         self.execute_button.pack(pady=5)
 
-        # Output text area
+
         self.output_text = st.ScrolledText(self, wrap=tk.WORD, width=60, height=10, state=tk.DISABLED)
         self.output_text.pack(pady=10)
 
